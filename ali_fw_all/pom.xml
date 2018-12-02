@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ali_fw_all</groupId>
+    <artifactId>ali_fw_all</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../../ali_fw_alibaba/fw_alibaba</module>
+        <module>../../ali_fw_analysis/fw_analysis</module>
+        <module>../../ali_fw_apache/fw_apache</module>
+        <module>../../ali_fw_book/fw_book</module>
+        <module>../../ali_fw_docker/fw_docker</module>
+        <module>../../ali_fw_flow/fw_flow</module>
+        <module>../../ali_fw_fw/fw_fw</module>
+        <module>../../ali_fw_google/fw_google</module>
+        <module>../../ali_fw_java/fw_java</module>
+        <module>../../ali_fw_netty/fw_netty</module>
+        <module>../../ali_fw_open/fw_open</module>
+        <module>../../ali_fw_resource/fw_resource</module>
+        <module>../../ali_fw_source/fw_source</module>
+        <module>../../ali_fw_sshm/fw_sshm</module>
+        <module>../../ali_fw_uml/fw_uml</module>
+        <module>../../ali_fw_unit_test/fw_unit_test</module>
+    </modules>
+</project>
