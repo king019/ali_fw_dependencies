@@ -132,7 +132,7 @@
       <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.2</version>
+        <version>1.18.4</version>
       </dependency>
       <dependency>
         <groupId>commons-io</groupId>
@@ -285,6 +285,11 @@
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j-impl</artifactId>
         <version>2.11.1</version>
+      </dependency>
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.17</version>
       </dependency>
       <dependency>
         <groupId>org.lionsoul</groupId>
@@ -576,7 +581,7 @@
       <dependency>
         <groupId>com.oracle</groupId>
         <artifactId>ojdbc14</artifactId>
-        <version>10.2.0.4.0</version>
+        <version>10.2.0.3.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
