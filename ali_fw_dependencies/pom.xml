@@ -220,15 +220,37 @@
         <version>3.23.1-GA</version>
       </dependency>
       <dependency>
-        <groupId>com.alibaba.rocketmq</groupId>
-        <artifactId>rocketmq-client</artifactId>
-        <version>3.6.2.Final</version>
+        <groupId>org.apache.rocketmq</groupId>
+        <artifactId>rocketmq-all</artifactId>
+        <version>4.4.0</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>com.alibaba.rocketmq</groupId>
-        <artifactId>rocketmq-srvutil</artifactId>
-        <version>3.2.6</version>
-      </dependency>
+      <!--<dependency>-->
+        <!--<groupId>org.apache.rocketmq</groupId>-->
+        <!--<artifactId>rocketmq-client</artifactId>-->
+        <!--<version>4.4.0</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.apache.rocketmq</groupId>-->
+        <!--<artifactId>rocketmq-srvutil</artifactId>-->
+        <!--<version>4.4.0</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.apache.rocketmq</groupId>-->
+        <!--<artifactId>rocketmq-openmessaging</artifactId>-->
+        <!--<version>4.4.0</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.apache.rocketmq</groupId>-->
+        <!--<artifactId>rocketmq-acl</artifactId>-->
+        <!--<version>4.4.0</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.apache.rocketmq</groupId>-->
+        <!--<artifactId>rocketmq-acl</artifactId>-->
+        <!--<version>4.4.0</version>-->
+      <!--</dependency>-->
       <dependency>
         <groupId>org.apache.zookeeper</groupId>
         <artifactId>zookeeper</artifactId>
