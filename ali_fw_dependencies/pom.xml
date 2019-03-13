@@ -35,6 +35,7 @@
         <artifactId>spring-cloud-dependencies</artifactId>
         <version>Brixton.RELEASE</version>
         <!--<version>Greenwich.RELEASE</version>-->
+        <!--<version>Greenwich.SR1</version>-->
         <type>pom</type>
         <scope>import</scope>
       </dependency>
