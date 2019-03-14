@@ -8,7 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>../../ali_fw_dependencies/ali_fw_dependencies</module>
+        <module>../../ali_fw_dependencies/ali_fw_all_dependencies</module>
         <module>../../ali_fw_alibaba/fw_alibaba</module>
         <module>../../ali_fw_analysis/fw_analysis</module>
         <module>../../ali_fw_apache/fw_apache</module>

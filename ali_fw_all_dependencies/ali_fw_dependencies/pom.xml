@@ -9,11 +9,6 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>ali_fw_dependencies</artifactId>
-  <modules>
-    <module>fw_common</module>
-    <module>fw_cloud_dependencies</module>
-    <module>ali_fw_all_dependencies</module>
-  </modules>
   <packaging>pom</packaging>
   <dependencyManagement>
     <dependencies>
