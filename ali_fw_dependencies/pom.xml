@@ -62,14 +62,23 @@
         <scope>import</scope>
       </dependency>
       <dependency>
+        <artifactId>storm</artifactId>
+        <groupId>org.apache.storm</groupId>
+        <version>1.2.2</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
         <groupId>io.zipkin.java</groupId>
         <artifactId>zipkin-autoconfigure-ui</artifactId>
         <version>2.12.5</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>23.0</version>
+        <artifactId>guava-parent</artifactId>
+        <version>27.1-jre</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.github.rholder</groupId>
@@ -79,7 +88,7 @@
       <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>druid</artifactId>
-        <version>1.1.13</version>
+        <version>1.1.14</version>
       </dependency>
       <dependency>
         <groupId>mysql</groupId>
@@ -453,11 +462,6 @@
         <version>2.8.5</version>
       </dependency>
       <dependency>
-        <groupId>org.apache.storm</groupId>
-        <artifactId>storm-core</artifactId>
-        <version>1.2.2</version>
-      </dependency>
-      <dependency>
         <groupId>org.apache.hadoop</groupId>
         <artifactId>hadoop-core</artifactId>
         <version>1.2.1</version>
@@ -515,7 +519,7 @@
       <dependency>
         <groupId>com.tencentcloudapi</groupId>
         <artifactId>tencentcloud-sdk-java</artifactId>
-        <version>3.0.28</version>
+        <version>3.0.56</version>
       </dependency>
       <dependency>
         <groupId>cglib</groupId>
