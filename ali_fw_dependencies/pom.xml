@@ -66,7 +66,7 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>23.0</version>
+        <version>27.1-jre</version>
       </dependency>
       <dependency>
         <groupId>com.github.rholder</groupId>
@@ -608,6 +608,11 @@
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
         <version>1.11.3</version>
+      </dependency>
+      <dependency>
+        <groupId>org.influxdb</groupId>
+        <artifactId>influxdb-java</artifactId>
+        <version>2.15</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
