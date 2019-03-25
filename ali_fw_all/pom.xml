@@ -25,6 +25,7 @@
         <module>../../ali_fw_sshm/fw_sshm</module>
         <module>../../ali_fw_uml/fw_uml</module>
         <module>../../ali_fw_unit_test/fw_unit_test</module>
+        <module>../../ali_fw_database/fw_database</module>
     </modules>
     <build>
         <plugins>
