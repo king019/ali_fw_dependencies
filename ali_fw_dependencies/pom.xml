@@ -66,6 +66,24 @@
     <commons-pool2.version>2.6.0</commons-pool2.version>
     <mockito.version>2.23.0</mockito.version>
     <commons-codec.version>1.11</commons-codec.version>
+    <commons-logging.version>1.2</commons-logging.version>
+    <jna.version>3.0.9</jna.version>
+    <littleproxy.version>1.1.2</littleproxy.version>
+    <bcprov-jdk15on.version>1.60</bcprov-jdk15on.version>
+    <disruptor.version>3.4.2</disruptor.version>
+    <commons-net.version>3.6</commons-net.version>
+    <akka-http_2.12.version>10.1.6</akka-http_2.12.version>
+    <akka-stream_2.12.version>2.5.19</akka-stream_2.12.version>
+    <testng.version>6.14.3</testng.version>
+    <jacob.version>1.14.3</jacob.version>
+    <jxl.version>2.6</jxl.version>
+    <docx4j.version>6.0.1</docx4j.version>
+    <javacsv.version>2.0</javacsv.version>
+    <commons-digester3.version>3.2</commons-digester3.version>
+    <commons-attributes-compiler.version>2.2</commons-attributes-compiler.version>
+    <commons-cli.version>1.4</commons-cli.version>
+    <lucene.version>3.5.0</lucene.version>
+    <gson.version>2.8.5</gson.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -430,97 +448,97 @@
       <dependency>
         <groupId>commons-logging</groupId>
         <artifactId>commons-logging</artifactId>
-        <version>1.2</version>
+        <version>${commons-logging.version}</version>
       </dependency>
       <dependency>
         <groupId>com.sun.jna</groupId>
         <artifactId>jna</artifactId>
-        <version>3.0.9</version>
+        <version>${jna.version}</version>
       </dependency>
       <dependency>
         <groupId>org.littleshoot</groupId>
         <artifactId>littleproxy</artifactId>
-        <version>1.1.2</version>
+        <version>${littleproxy.version}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
-        <version>1.60</version>
+        <version>${bcprov-jdk15on.version}</version>
       </dependency>
       <dependency>
         <groupId>com.lmax</groupId>
         <artifactId>disruptor</artifactId>
-        <version>3.4.2</version>
+        <version>${disruptor.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-net</groupId>
         <artifactId>commons-net</artifactId>
-        <version>3.6</version>
+        <version>${commons-net.version}</version>
       </dependency>
       <dependency>
         <groupId>com.typesafe.akka</groupId>
         <artifactId>akka-http_2.12</artifactId>
-        <version>10.1.6</version>
+        <version>${akka-http_2.12.version}</version>
       </dependency>
       <dependency>
         <groupId>com.typesafe.akka</groupId>
         <artifactId>akka-stream_2.12</artifactId>
-        <version>2.5.19</version>
+        <version>${akka-stream_2.12.version}</version>
       </dependency>
       <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>6.14.3</version>
+        <version>${testng.version}</version>
       </dependency>
       <dependency>
         <groupId>net.sf.jacob-project</groupId>
         <artifactId>jacob</artifactId>
-        <version>1.14.3</version>
+        <version>${jacob.version}</version>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.jexcelapi</groupId>
         <artifactId>jxl</artifactId>
-        <version>2.6</version>
+        <version>${jxl.version}</version>
       </dependency>
       <dependency>
         <groupId>org.docx4j</groupId>
         <artifactId>docx4j</artifactId>
-        <version>6.0.1</version>
+        <version>${docx4j.version}</version>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.javacsv</groupId>
         <artifactId>javacsv</artifactId>
-        <version>2.0</version>
+        <version>${javacsv.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-digester3</artifactId>
-        <version>3.2</version>
+        <version>${commons-digester3.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-attributes</groupId>
         <artifactId>commons-attributes-compiler</artifactId>
-        <version>2.2</version>
+        <version>${commons-attributes-compiler.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-cli</groupId>
         <artifactId>commons-cli</artifactId>
-        <version>1.4</version>
+        <version>${commons-cli.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-core</artifactId>
-        <version>3.5.0</version>
+        <version>${lucene.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-demo</artifactId>
-        <version>3.5.0</version>
+        <version>${lucene.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
-        <version>2.8.5</version>
+        <version>${gson.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.storm</groupId>
