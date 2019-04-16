@@ -59,7 +59,7 @@
     <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
     <spymemcached.version>2.12.3</spymemcached.version>
     <jmeter.version>5.0</jmeter.version>
-    <dubbo.version>2.6.6</dubbo.version>
+    <dubbo.version>2.7.1</dubbo.version>
     <log4j-slf4j-impl.version>2.11.2</log4j-slf4j-impl.version>
     <ip2region.version>1.7.2</ip2region.version>
     <asm-util.version>6.2.1</asm-util.version>
@@ -424,7 +424,7 @@
         <version>${jmeter.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.alibaba</groupId>
+        <groupId>org.apache.dubbo</groupId>
         <artifactId>dubbo</artifactId>
         <version>${dubbo.version}</version>
       </dependency>
