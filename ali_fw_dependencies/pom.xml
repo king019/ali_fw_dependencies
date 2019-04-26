@@ -14,23 +14,23 @@
   <properties>
     <jdk.version>11</jdk.version>
     <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
-    <netty-bom.version>4.1.34.Final</netty-bom.version>
+    <netty-bom.version>4.1.35.Final</netty-bom.version>
     <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
-    <zipkin2.parent.version>2.12.5</zipkin2.parent.version>
+    <zipkin2.parent.version>2.12.9</zipkin2.parent.version>
     <guava.version>27.1-jre</guava.version>
     <guava-retrying.version>2.0.0</guava-retrying.version>
     <druid.version>1.1.16</druid.version>
-    <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
+    <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
     <joda-time.version>2.10.1</joda-time.version>
     <mybatis-generator-core.version>1.3.7</mybatis-generator-core.version>
-    <micrometer.version>1.1.3</micrometer.version>
+    <micrometer.version>1.1.4</micrometer.version>
     <rocketmq.version>4.5.0</rocketmq.version>
-    <hbase.version>2.1.1</hbase.version>
+    <hbase.version>2.1.4</hbase.version>
     <jmockit.version>1.23</jmockit.version>
     <jmh.version>1.21</jmh.version>
     <pagehelper-spring-boot-starter.version>1.2.10</pagehelper-spring-boot-starter.version>
     <c3p0.version>0.9.1.2</c3p0.version>
-    <mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
+    <mybatis-spring-boot-starter.version>2.0.1</mybatis-spring-boot-starter.version>
     <jsqlparser.version>0.8.0</jsqlparser.version>
     <jedis.version>2.9.0</jedis.version>
     <servlet-api.version>2.5</servlet-api.version>
@@ -43,85 +43,85 @@
     <lombok.version>1.18.6</lombok.version>
     <commons-io.version>2.6</commons-io.version>
     <commons-lang3.version>3.8.1</commons-lang3.version>
-    <commons-collections4.version>4.2</commons-collections4.version>
-    <httpclient.version>4.5.7</httpclient.version>
-    <httpcore.version>4.4.10</httpcore.version>
+    <commons-collections4.version>4.3</commons-collections4.version>
+    <httpclient.version>4.5.8</httpclient.version>
+    <httpcore.version>4.4.11</httpcore.version>
     <httpasyncclient.version>4.1.4</httpasyncclient.version>
-    <async-http-client.version>2.7.0</async-http-client.version>
+    <async-http-client.version>2.8.1</async-http-client.version>
     <unirest-java.version>1.4.9</unirest-java.version>
-    <okhttp.version>3.12.0</okhttp.version>
+    <okhttp.version>3.14.1</okhttp.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
-    <protobuf-java.version>3.6.1</protobuf-java.version>
-    <javassist.version>3.23.1-GA</javassist.version>
+    <protobuf-java.version>3.7.1</protobuf-java.version>
+    <javassist.version>3.25.0-GA</javassist.version>
     <zookeeper.version>3.4.13</zookeeper.version>
-    <fastjson.version>1.2.56</fastjson.version>
+    <fastjson.version>1.2.57</fastjson.version>
     <jstorm-core.version>2.2.1</jstorm-core.version>
     <redisson.version>3.10.6</redisson.version>
-    <poi.version>3.9</poi.version>
+    <poi.version>4.1.0</poi.version>
     <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
     <spymemcached.version>2.12.3</spymemcached.version>
-    <jmeter.version>5.0</jmeter.version>
+    <jmeter.version>5.1.1</jmeter.version>
     <dubbo.version>2.7.1</dubbo.version>
     <log4j-slf4j-impl.version>2.11.2</log4j-slf4j-impl.version>
     <ip2region.version>1.7.2</ip2region.version>
-    <asm-util.version>6.2.1</asm-util.version>
-    <commons-pool2.version>2.6.0</commons-pool2.version>
-    <mockito.version>2.23.0</mockito.version>
-    <commons-codec.version>1.11</commons-codec.version>
+    <asm-util.version>7.1</asm-util.version>
+    <commons-pool2.version>2.6.2</commons-pool2.version>
+    <mockito-core.version>2.23.0</mockito-core.version>
+    <commons-codec.version>1.12</commons-codec.version>
     <commons-logging.version>1.2</commons-logging.version>
     <jna.version>3.0.9</jna.version>
     <littleproxy.version>1.1.2</littleproxy.version>
-    <bcprov-jdk15on.version>1.60</bcprov-jdk15on.version>
+    <bcprov-jdk15on.version>1.61</bcprov-jdk15on.version>
     <disruptor.version>3.4.2</disruptor.version>
     <commons-net.version>3.6</commons-net.version>
-    <akka-http_2.12.version>10.1.6</akka-http_2.12.version>
-    <akka-stream_2.12.version>2.5.19</akka-stream_2.12.version>
+    <akka-http_2.12.version>10.1.8</akka-http_2.12.version>
+    <akka-stream_2.12.version>2.5.22</akka-stream_2.12.version>
     <testng.version>6.14.3</testng.version>
     <jacob.version>1.14.3</jacob.version>
-    <jxl.version>2.6</jxl.version>
+    <jxl.version>2.6.12</jxl.version>
     <docx4j.version>6.1.2</docx4j.version>
     <javacsv.version>2.0</javacsv.version>
     <commons-digester3.version>3.2</commons-digester3.version>
     <commons-attributes-compiler.version>2.2</commons-attributes-compiler.version>
     <commons-cli.version>1.4</commons-cli.version>
-    <lucene.version>3.5.0</lucene.version>
+    <lucene.version>8.0.0</lucene.version>
     <gson.version>2.8.5</gson.version>
     <storm.version>1.2.2</storm.version>
     <hadoop.version>1.2.1</hadoop.version>
     <libthrift.version>0.12.0</libthrift.version>
     <commons-lang.version>2.6</commons-lang.version>
     <hamcrest.version>1.3</hamcrest.version>
-    <mockito.version>1.10.19</mockito.version>
+    <mockito-all.version>1.10.19</mockito-all.version>
     <edtFTPj.version>1.5.3</edtFTPj.version>
-    <jsch.version>0.1.54</jsch.version>
-    <amqp-client.version>4.0.2</amqp-client.version>
+    <jsch.version>0.1.55</jsch.version>
+    <amqp-client.version>5.7.0</amqp-client.version>
     <xstream.version>1.4.11.1</xstream.version>
     <xmlpull.version>1.1.3.4d_b4_min</xmlpull.version>
-    <tencentcloud-sdk-java.version>3.0.56</tencentcloud-sdk-java.version>
-    <cglib.version>3.2.10</cglib.version>
+    <tencentcloud-sdk-java.version>3.0.64</tencentcloud-sdk-java.version>
+    <cglib.version>3.2.11</cglib.version>
     <validation-api.version>2.0.1.Final</validation-api.version>
-    <hibernate-validator.version>6.1.0.Alpha1</hibernate-validator.version>
+    <hibernate-validator.version>6.1.0.Alpha4</hibernate-validator.version>
     <fw.version>1.0-SNAPSHOT</fw.version>
-    <mail.version>1.4.7</mail.version>
-    <ant.version>1.9.4</ant.version>
+    <mail.version>1.5.0-b01</mail.version>
+    <ant.version>1.10.5</ant.version>
     <zkclient.version>0.11</zkclient.version>
     <jstl.version>1.2</jstl.version>
-    <commons-fileupload.version>1.3.3</commons-fileupload.version>
+    <commons-fileupload.version>1.4</commons-fileupload.version>
     <groovy.version>2.4.9</groovy.version>
     <commons-email.version>1.5</commons-email.version>
     <hibernate-jpa-2.1-api.version>1.0.2.Final</hibernate-jpa-2.1-api.version>
-    <mockserver-netty.version>5.3.0</mockserver-netty.version>
-    <lettuce-core.version>5.1.4.RELEASE</lettuce-core.version>
+    <mockserver-netty.version>5.5.4</mockserver-netty.version>
+    <lettuce-core.version>5.1.6.RELEASE</lettuce-core.version>
     <ring-cors.version>0.1.12</ring-cors.version>
-    <swagger-spring-boot-starter.version>1.8.0.RELEASE</swagger-spring-boot-starter.version>
+    <swagger-spring-boot-starter.version>1.9.0.RELEASE</swagger-spring-boot-starter.version>
     <jsoup.version>1.11.3</jsoup.version>
     <influxdb-java.version>2.15</influxdb-java.version>
-    <reactor-netty.version>0.8.5.RELEASE</reactor-netty.version>
+    <reactor-netty.version>0.8.6.RELEASE</reactor-netty.version>
     <colt.version>1.2.0</colt.version>
-    <kafka-junit.version>4.1.4</kafka-junit.version>
+    <kafka-junit.version>4.1.5</kafka-junit.version>
     <sharding-jdbc-core.version>3.1.0</sharding-jdbc-core.version>
     <pagehelper.version>5.1.8</pagehelper.version>
-    <jaxb-impl.version>2.1.2</jaxb-impl.version>
+    <jaxb-impl.version>2.3.2</jaxb-impl.version>
     <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
     <curator-recipes.version>4.2.0</curator-recipes.version>
   </properties>
@@ -483,7 +483,12 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>${mockito.version}</version>
+        <version>${mockito-core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-all</artifactId>
+        <version>${mockito-all.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-codec</groupId>
@@ -614,11 +619,6 @@
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
         <version>${hamcrest.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-all</artifactId>
-        <version>${mockito.version}</version>
       </dependency>
       <dependency>
         <groupId>com.enterprisedt</groupId>
