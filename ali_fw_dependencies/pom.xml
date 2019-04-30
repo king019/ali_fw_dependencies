@@ -57,7 +57,7 @@
     <fastjson.version>1.2.57</fastjson.version>
     <jstorm-core.version>2.2.1</jstorm-core.version>
     <redisson.version>3.10.6</redisson.version>
-    <poi.version>3.9</poi.version>
+    <poi.version>4.1.0</poi.version>
     <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
     <spymemcached.version>2.12.3</spymemcached.version>
     <jmeter.version>5.1.1</jmeter.version>
