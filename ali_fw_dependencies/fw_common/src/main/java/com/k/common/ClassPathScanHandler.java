@@ -151,7 +151,7 @@ public class ClassPathScanHandler {
                     try {
                         classes.add(Thread.currentThread()
                                 .getContextClassLoader().loadClass(className));
-                    } catch (ClassNotFoundException e) {
+                    } catch ( Throwable e) {
                         System.out.println("Class.forName error:");
                         e.printStackTrace();
                     }
