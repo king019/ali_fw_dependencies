@@ -1,20 +1,21 @@
 package com.k.common;
 
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.lang.reflect.Modifier;
 import java.net.JarURLConnection;
 import java.net.URL;
 import java.net.URLDecoder;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * 扫描指定包（包括jar）下的class文件 <br>
@@ -22,6 +23,8 @@ import java.util.regex.Pattern;
  *
  * @author michael
  */
+@NoArgsConstructor
+@Data
 public class ClassPathScanHandler {
     /**
      * 是否排除内部类 true->是 false->否
@@ -36,12 +39,6 @@ public class ClassPathScanHandler {
      * 过滤规则列表 如果是null或者空，即全部符合不过滤
      */
     private List<String> classFilters = null;
-
-    /**
-     * 无参构造器，默认是排除内部类、并搜索符合规则
-     */
-    public ClassPathScanHandler() {
-    }
 
 
     /**
@@ -63,7 +60,25 @@ public class ClassPathScanHandler {
 
     public static Set<Class<?>> getPackageAllClasses(String basePackage) {
         ClassPathScanHandler handler = new ClassPathScanHandler();
-        return handler.getPackageAllClasses(basePackage, true);
+        return handler.getPackageAllClasses(basePackage, true, true, true, true);
+    }
+
+    public static Set<Class<?>> getPackageAllClasses(String basePackage, Set<Class> filters) {
+        ClassPathScanHandler handler = new ClassPathScanHandler();
+        return handler.getPackageAllClasses(basePackage, true, true, true, true, filters);
+    }
+
+    public static Set<Class<?>> getPackageAllClasses(String basePackage, boolean recursive, boolean interfaceImpl, boolean filterAbstract, boolean filterNoPublic, Set<Class> filters) {
+        ClassPathScanHandler handler = new ClassPathScanHandler();
+        Set<Class<?>> classes = handler.getPackageAllClasses(basePackage, recursive, interfaceImpl, filterAbstract, filterNoPublic);
+        classes = classes.stream().filter(clazz -> filters.stream().anyMatch(filter -> filter.isAssignableFrom(clazz))).collect(Collectors.toSet());
+        return classes;
+    }
+
+    public static Set<Class<?>> getPackageAllClasses(String basePackage, boolean recursive, boolean interfaceImpl, boolean filterAbstract, boolean filterNoPublic) {
+        ClassPathScanHandler handler = new ClassPathScanHandler();
+        Set<Class<?>> classes = handler.getPackageAllClasses(basePackage, recursive);
+        return classes.stream().filter(classzz -> !interfaceImpl || filterInterface(classzz)).filter(classzz -> !filterAbstract || !filterAbstract(classzz)).filter(classzz -> !filterNoPublic || filterPublic(classzz)).collect(Collectors.toSet());
     }
 
     /**
@@ -73,8 +88,7 @@ public class ClassPathScanHandler {
      * @param recursive   是否递归搜索子包
      * @return Set
      */
-    public Set<Class<?>> getPackageAllClasses(String basePackage,
-                                              boolean recursive) {
+    public Set<Class<?>> getPackageAllClasses(String basePackage, boolean recursive) {
         Set<Class<?>> classes = new LinkedHashSet<>();
         String packageName = basePackage;
         if (packageName.endsWith(".")) {
@@ -91,19 +105,18 @@ public class ClassPathScanHandler {
                 URL url = dirs.nextElement();
                 String protocol = url.getProtocol();
                 if ("file".equals(protocol)) {
-                    System.out.println("扫描file类型的class文件....");
+                    //System.out.println("扫描file类型的class文件....");
                     String filePath = URLDecoder.decode(url.getFile(), "UTF-8");
-                    doScanPackageClassesByFile(classes, packageName, filePath,
-                            recursive);
+                    doScanPackageClassesByFile(classes, packageName, filePath, recursive);
                 } else if ("jar".equals(protocol)) {
-                    System.out.println("扫描jar文件中的类....");
+                    //System.out.println("扫描jar文件中的类....");
                     doScanPackageClassesByJar(packageName, url, recursive,
                             classes);
                 }
             }
         } catch (IOException e) {
-            System.out.println("IOException error:");
-            e.printStackTrace();
+            //System.out.println("IOException error:");
+            //e.printStackTrace();
         }
 
         return classes;
@@ -139,7 +152,7 @@ public class ClassPathScanHandler {
                 }
                 // 判断是否过滤 inner class
                 if (excludeInner && name.indexOf('$') != -1) {
-                    System.out.println("exclude inner class with name:" + name);
+                    //System.out.println("exclude inner class with name:" + name);
                     continue;
                 }
                 String classSimpleName = name
@@ -151,14 +164,14 @@ public class ClassPathScanHandler {
                     try {
                         classes.add(Thread.currentThread()
                                 .getContextClassLoader().loadClass(className));
-                    } catch ( Throwable e) {
-                        System.out.println("Class.forName error:");
-                        e.printStackTrace();
+                    } catch (Throwable e) {
+                        //System.out.println("Class.forName error:");
+                        //e.printStackTrace();
                     }
                 }
             }
         } catch (IOException e) {
-            System.out.println("IOException error:");
+            //System.out.println("IOException error:");
         }
     }
 
@@ -186,7 +199,7 @@ public class ClassPathScanHandler {
                 }
                 String filename = file.getName();
                 if (excludeInner && filename.indexOf('$') != -1) {
-                    System.out.println("exclude inner class with name:" + filename);
+                    //System.out.println("exclude inner class with name:" + filename);
                     return false;
                 }
                 return filterClassName(filename);
@@ -237,46 +250,21 @@ public class ClassPathScanHandler {
         return (checkInOrEx && flag) || (!checkInOrEx && !flag);
     }
 
-    /**
-     * @return the excludeInner
-     */
-    public boolean isExcludeInner() {
-        return excludeInner;
+    private static boolean filterInterface(Class clazz) {
+        Class[] interfaces = clazz.getInterfaces();
+        return interfaces.length > 0;
     }
 
-    /**
-     * @return the checkInOrEx
-     */
-    public boolean isCheckInOrEx() {
-        return checkInOrEx;
+    private static boolean filterAbstract(Class clazz) {
+        return Modifier.isAbstract(clazz.getModifiers());
     }
 
-    /**
-     * @return the classFilters
-     */
-    public List<String> getClassFilters() {
-        return classFilters;
+    private void print(Set<Class<?>> classes) {
+        classes.forEach(clazz -> System.out.println("set.add(" + clazz.getName() + ".class);"));
     }
 
-    /**
-     * @param pExcludeInner the excludeInner to set
-     */
-    public void setExcludeInner(boolean pExcludeInner) {
-        excludeInner = pExcludeInner;
-    }
-
-    /**
-     * @param pCheckInOrEx the checkInOrEx to set
-     */
-    public void setCheckInOrEx(boolean pCheckInOrEx) {
-        checkInOrEx = pCheckInOrEx;
-    }
-
-    /**
-     * @param pClassFilters the classFilters to set
-     */
-    public void setClassFilters(List<String> pClassFilters) {
-        classFilters = pClassFilters;
+    private static boolean filterPublic(Class clazz) {
+        return Modifier.isPublic(clazz.getModifiers());
     }
 
     /**
