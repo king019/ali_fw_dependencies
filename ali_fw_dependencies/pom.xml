@@ -12,7 +12,7 @@
     <module>fw_dependency</module>
   </modules>
   <properties>
-    <jdk.version>11</jdk.version>
+    <jdk.version>1.8</jdk.version>
     <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
     <netty-bom.version>4.1.36.Final</netty-bom.version>
     <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
@@ -914,8 +914,8 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
-            <source>11</source>
-            <target>11</target>
+            <source>${jdk.version}</source>
+            <target>${jdk.version}</target>
           </configuration>
         </plugin>
         <plugin>
