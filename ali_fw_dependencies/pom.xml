@@ -17,6 +17,7 @@
     <spring-cloud-dependencies.version>Greenwich.SR2</spring-cloud-dependencies.version>
     <netty-bom.version>4.1.36.Final</netty-bom.version>
     <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
+    <grpc.version>1.21.0</grpc.version>
     <zipkin2.parent.version>2.12.9</zipkin2.parent.version>
     <guava.version>28.0-jre</guava.version>
     <guava-retrying.version>2.0.0</guava-retrying.version>
@@ -52,7 +53,7 @@
     <unirest-java.version>1.4.9</unirest-java.version>
     <okhttp.version>3.14.2</okhttp.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
-    <protobuf-java.version>3.8.0</protobuf-java.version>
+    <protobuf.version>3.8.0</protobuf.version>
     <javassist.version>3.25.0-GA</javassist.version>
     <zookeeper.version>3.5.5</zookeeper.version>
     <fastjson.version>1.2.58</fastjson.version>
@@ -183,6 +184,13 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-parent</artifactId>
         <version>${maven-plugin-parent.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.grpc</groupId>
+        <artifactId>grpc-bom</artifactId>
+        <version>${grpc.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -384,7 +392,12 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
-        <version>${protobuf-java.version}</version>
+        <version>${protobuf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java-util</artifactId>
+        <version>${protobuf.version}</version>
       </dependency>
       <dependency>
         <groupId>org.javassist</groupId>
