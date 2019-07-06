@@ -15,7 +15,7 @@
     <jdk.version>1.8</jdk.version>
     <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
     <spring-cloud-dependencies.version>Greenwich.SR2</spring-cloud-dependencies.version>
-    <netty-bom.version>4.1.37.Final</netty-bom.version>
+    <netty-bom.version>4.1.36.Final</netty-bom.version>
     <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
     <grpc.version>1.22.0</grpc.version>
     <zipkin2.parent.version>2.12.9</zipkin2.parent.version>
@@ -176,6 +176,13 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-bom</artifactId>
+        <version>${netty-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-parent</artifactId>
         <version>${netty-bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
