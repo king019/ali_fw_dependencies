@@ -10,6 +10,7 @@
   <modules>
     <module>fw_common</module>
     <module>fw_dependency</module>
+    <module>fw_dependencies_jdk11</module>
   </modules>
   <properties>
     <jdk.version>1.8</jdk.version>
