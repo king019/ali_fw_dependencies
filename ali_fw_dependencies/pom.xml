@@ -37,7 +37,7 @@
     <jedis.version>2.9.0</jedis.version>
     <servlet-api.version>2.5</servlet-api.version>
     <commons-beanutils.version>1.9.3</commons-beanutils.version>
-    <mongo-java-driver.version>3.9.1</mongo-java-driver.version>
+    <mongo-java-driver.version>3.10.2</mongo-java-driver.version>
     <junit.version>4.12</junit.version>
     <junit-jupiter-api.version>5.5.0</junit-jupiter-api.version>
     <junit-platform-suite-api.vesion>1.5.0</junit-platform-suite-api.vesion>
@@ -102,7 +102,7 @@
     <tencentcloud-sdk-java.version>3.0.77</tencentcloud-sdk-java.version>
     <cglib.version>3.2.12</cglib.version>
     <validation-api.version>2.0.1.Final</validation-api.version>
-    <hibernate-validator.version>6.1.0.Alpha4</hibernate-validator.version>
+    <hibernate-validator.version>5.4.3.Final</hibernate-validator.version>
     <fw.version>1.0-SNAPSHOT</fw.version>
     <mail.version>1.5.0-b01</mail.version>
     <ant.version>1.10.6</ant.version>
