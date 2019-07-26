@@ -13,7 +13,7 @@
   </modules>
   <properties>
     <jdk.version>1.8</jdk.version>
-    <spring.boot.version>2.2.0.M4</spring.boot.version>
+    <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
     <spring-cloud-dependencies.version>Hoxton.M1</spring-cloud-dependencies.version>
     <netty-bom.version>4.1.38.Final</netty-bom.version>
     <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
@@ -60,6 +60,7 @@
     <jstorm-core.version>2.2.1</jstorm-core.version>
     <redisson.version>3.11.1</redisson.version>
     <poi.version>4.1.0</poi.version>
+    <commons-compress.version>1.18</commons-compress.version>
     <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
     <spymemcached.version>2.12.3</spymemcached.version>
     <jmeter.version>5.1.1</jmeter.version>
@@ -462,6 +463,11 @@
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-scratchpad</artifactId>
         <version>${poi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-compress</artifactId>
+        <version>${commons-compress.version}</version>
       </dependency>
       <dependency>
         <groupId>com.whalin</groupId>
