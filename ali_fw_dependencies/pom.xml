@@ -12,7 +12,7 @@
         <module>fw_dependency</module>
     </modules>
     <properties>
-        <jdk.version>1.8</jdk.version>
+        <jdk.version>11</jdk.version>
         <spring.boot.version>2.1.7.RELEASE</spring.boot.version>
         <spring-cloud-dependencies.version>Greenwich.SR2</spring-cloud-dependencies.version>
         <netty-bom.version>4.1.38.Final</netty-bom.version>
