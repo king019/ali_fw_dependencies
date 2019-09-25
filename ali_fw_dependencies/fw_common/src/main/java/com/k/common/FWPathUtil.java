@@ -19,5 +19,10 @@ public class FWPathUtil {
         res = "target/";
         return res;
     }
+    public static String getTargetPath(String path) {
+        final String res;
+        res = getTargetPath()+path;
+        return res;
+    }
 
 }
