@@ -13,7 +13,7 @@
     </modules>
     <properties>
         <jdk.version>11</jdk.version>
-        <spring.boot.version>2.1.8.RELEASE</spring.boot.version>
+        <spring.boot.version>2.2.0.RELEASE</spring.boot.version>
         <spring-cloud-dependencies.version>Greenwich.SR3</spring-cloud-dependencies.version>
         <netty-bom.version>4.1.42.Final</netty-bom.version>
         <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
@@ -22,7 +22,7 @@
         <guava.version>28.1-jre</guava.version>
         <guava-retrying.version>2.0.0</guava-retrying.version>
         <druid.version>1.1.20</druid.version>
-        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.18</mysql-connector-java.version>
         <joda-time.version>2.10.4</joda-time.version>
         <mybatis-generator-core.version>1.3.7</mybatis-generator-core.version>
         <micrometer.version>1.3.0</micrometer.version>
@@ -32,12 +32,12 @@
         <jmh.version>1.21</jmh.version>
         <pagehelper-spring-boot-starter.version>1.2.12</pagehelper-spring-boot-starter.version>
         <c3p0.version>0.9.1.2</c3p0.version>
-        <mybatis-spring-boot-starter.version>2.1.0</mybatis-spring-boot-starter.version>
+        <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <jsqlparser.version>0.8.0</jsqlparser.version>
         <jedis.version>3.1.0</jedis.version>
         <servlet-api.version>2.5</servlet-api.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
-        <mongo-java-driver.version>3.11.0</mongo-java-driver.version>
+        <mongo-java-driver.version>3.11.1</mongo-java-driver.version>
         <junit.version>4.12</junit.version>
         <junit-jupiter-api.version>5.5.2</junit-jupiter-api.version>
         <junit-platform-suite-api.vesion>1.5.2</junit-platform-suite-api.vesion>
@@ -49,22 +49,22 @@
         <httpclient.version>4.5.10</httpclient.version>
         <httpcore.version>4.4.12</httpcore.version>
         <httpasyncclient.version>4.1.4</httpasyncclient.version>
-        <async-http-client.version>2.10.3</async-http-client.version>
+        <async-http-client.version>2.10.4</async-http-client.version>
         <unirest-java.version>1.4.9</unirest-java.version>
-        <okhttp.version>4.2.0</okhttp.version>
+        <okhttp.version>4.2.2</okhttp.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
         <protobuf.version>3.10.0</protobuf.version>
-        <javassist.version>3.25.0-GA</javassist.version>
-        <zookeeper.version>3.5.5</zookeeper.version>
+        <javassist.version>3.26.0-GA</javassist.version>
+        <zookeeper.version>3.5.6</zookeeper.version>
         <fastjson.version>1.2.62</fastjson.version>
         <jstorm-core.version>2.2.1</jstorm-core.version>
-        <redisson.version>3.11.3</redisson.version>
-        <poi.version>4.1.0</poi.version>
+        <redisson.version>3.11.4</redisson.version>
+        <poi.version>4.1.1</poi.version>
         <commons-compress.version>1.19</commons-compress.version>
         <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
         <spymemcached.version>2.12.3</spymemcached.version>
         <jmeter.version>5.1.1</jmeter.version>
-        <dubbo.version>2.7.3</dubbo.version>
+        <dubbo.version>2.7.4</dubbo.version>
         <log4j-slf4j-impl.version>2.12.1</log4j-slf4j-impl.version>
         <ip2region.version>1.7.2</ip2region.version>
         <asm-util.version>7.2</asm-util.version>
@@ -100,7 +100,7 @@
         <amqp-client.version>5.7.3</amqp-client.version>
         <xstream.version>1.4.11.1</xstream.version>
         <xmlpull.version>1.1.3.4d_b4_min</xmlpull.version>
-        <tencentcloud-sdk-java.version>3.0.91</tencentcloud-sdk-java.version>
+        <tencentcloud-sdk-java.version>3.0.98</tencentcloud-sdk-java.version>
         <cglib.version>3.3.0</cglib.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
@@ -114,7 +114,7 @@
         <commons-email.version>1.5</commons-email.version>
         <hibernate-jpa-2.1-api.version>1.0.2.Final</hibernate-jpa-2.1-api.version>
         <mockserver-netty.version>5.6.1</mockserver-netty.version>
-        <lettuce-core.version>5.1.8.RELEASE</lettuce-core.version>
+        <lettuce-core.version>5.2.0.RELEASE</lettuce-core.version>
         <ring-cors.version>0.1.12</ring-cors.version>
         <swagger-spring-boot-starter.version>1.9.0.RELEASE</swagger-spring-boot-starter.version>
         <jsoup.version>1.12.1</jsoup.version>
@@ -128,7 +128,7 @@
         <curator-recipes.version>4.2.0</curator-recipes.version>
         <jaxb-api.version>2.2.12</jaxb-api.version>
         <dom4j.version>2.1.1</dom4j.version>
-        <apollo-client.version>1.4.0</apollo-client.version>
+        <apollo-client.version>1.5.0</apollo-client.version>
         <guice.version>4.2.2</guice.version>
         <sharding-jdbc-spring-boot-starter.version>4.0.0-RC2</sharding-jdbc-spring-boot-starter.version>
     </properties>
