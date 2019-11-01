@@ -17,7 +17,7 @@
         <spring-cloud-dependencies.version>Greenwich.SR3</spring-cloud-dependencies.version>
         <netty-bom.version>4.1.42.Final</netty-bom.version>
         <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
-        <grpc.version>1.24.0</grpc.version>
+        <grpc.version>1.24.1</grpc.version>
         <zipkin2.parent.version>2.12.9</zipkin2.parent.version>
         <guava.version>28.1-jre</guava.version>
         <guava-retrying.version>2.0.0</guava-retrying.version>
@@ -58,7 +58,7 @@
         <zookeeper.version>3.5.6</zookeeper.version>
         <fastjson.version>1.2.62</fastjson.version>
         <jstorm-core.version>2.2.1</jstorm-core.version>
-        <redisson.version>3.11.4</redisson.version>
+        <redisson.version>3.11.5</redisson.version>
         <poi.version>4.1.1</poi.version>
         <commons-compress.version>1.19</commons-compress.version>
         <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
@@ -89,7 +89,7 @@
         <commons-cli.version>1.4</commons-cli.version>
         <lucene.version>8.2.0</lucene.version>
         <gson.version>2.8.6</gson.version>
-        <storm.version>2.0.0</storm.version>
+        <storm.version>2.1.0</storm.version>
         <hadoop.version>1.2.1</hadoop.version>
         <libthrift.version>0.12.0</libthrift.version>
         <commons-lang.version>2.6</commons-lang.version>
@@ -103,7 +103,7 @@
         <tencentcloud-sdk-java.version>3.0.98</tencentcloud-sdk-java.version>
         <cglib.version>3.3.0</cglib.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
-        <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
+        <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
         <fw.version>1.0-SNAPSHOT</fw.version>
         <mail.version>1.5.0-b01</mail.version>
         <ant.version>1.10.7</ant.version>
@@ -114,12 +114,12 @@
         <commons-email.version>1.5</commons-email.version>
         <hibernate-jpa-2.1-api.version>1.0.2.Final</hibernate-jpa-2.1-api.version>
         <mockserver-netty.version>5.6.1</mockserver-netty.version>
-        <lettuce-core.version>5.2.0.RELEASE</lettuce-core.version>
+        <lettuce-core.version>5.2.1.RELEASE</lettuce-core.version>
         <ring-cors.version>0.1.12</ring-cors.version>
         <swagger-spring-boot-starter.version>1.9.0.RELEASE</swagger-spring-boot-starter.version>
         <jsoup.version>1.12.1</jsoup.version>
-        <influxdb-java.version>2.15</influxdb-java.version>
-        <reactor-netty.version>0.9.0.RELEASE</reactor-netty.version>
+        <influxdb-java.version>2.16</influxdb-java.version>
+        <reactor-netty.version>0.9.1.RELEASE</reactor-netty.version>
         <colt.version>1.2.0</colt.version>
         <kafka-junit.version>4.1.6</kafka-junit.version>
         <pagehelper.version>5.1.10</pagehelper.version>
