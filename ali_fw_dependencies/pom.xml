@@ -63,7 +63,7 @@
         <commons-compress.version>1.19</commons-compress.version>
         <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
         <spymemcached.version>2.12.3</spymemcached.version>
-        <jmeter.version>5.2</jmeter.version>
+        <jmeter.version>5.1.1</jmeter.version>
         <dubbo.version>2.7.4.1</dubbo.version>
         <log4j-slf4j-impl.version>2.12.1</log4j-slf4j-impl.version>
         <ip2region.version>1.7.2</ip2region.version>
