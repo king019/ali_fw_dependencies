@@ -19,7 +19,7 @@
         <module>../../ali_fw_java/fw_java</module>
         <module>../../ali_fw_netty/fw_netty</module>
         <module>../../ali_fw_open/fw_open</module>
-        <module>../../ali_fw_resource/fw_resource</module>
+        <module>../../ali_fw_res/fw_res</module>
 <!--        <module>../../ali_fw_source/fw_source</module>-->
         <module>../../ali_fw_sshm/fw_sshm</module>
         <module>../../ali_fw_uml/fw_uml</module>
