@@ -26,6 +26,7 @@
         <module>../../ali_fw_unit_test/fw_unit_test</module>
         <module>../../ali_fw_db/fw_db</module>
         <module>../../ali_fw_fw/fw_fw</module>
+        <module>../../ali_fw_feature/fw_feature</module>
     </modules>
     <build>
         <plugins>
