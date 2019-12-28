@@ -14,7 +14,7 @@
     <properties>
         <jdk.version>11</jdk.version>
         <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
-        <spring-cloud-dependencies.version>Hoxton.SR1</spring-cloud-dependencies.version>
+        <spring-cloud-dependencies.version>Hoxton.RELEASE</spring-cloud-dependencies.version>
         <netty-bom.version>4.1.44.Final</netty-bom.version>
         <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
         <grpc.version>1.26.0</grpc.version>
