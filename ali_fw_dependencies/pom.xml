@@ -14,10 +14,10 @@
     <properties>
         <jdk.version>11</jdk.version>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
-        <spring-cloud-dependencies.version>Hoxton.SR1</spring-cloud-dependencies.version>
+        <spring-cloud-dependencies.version>Hoxton.SR2</spring-cloud-dependencies.version>
         <netty-bom.version>4.1.45.Final</netty-bom.version>
         <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
-        <grpc.version>1.27.0</grpc.version>
+        <grpc.version>1.27.1</grpc.version>
         <zipkin2.parent.version>2.12.9</zipkin2.parent.version>
         <guava.version>28.2-jre</guava.version>
         <guava-retrying.version>2.0.0</guava-retrying.version>
@@ -25,8 +25,8 @@
         <mysql-connector-java.version>5.1.48</mysql-connector-java.version>
         <joda-time.version>2.10.5</joda-time.version>
         <mybatis-generator-core.version>1.4.0</mybatis-generator-core.version>
-        <micrometer.version>1.3.3</micrometer.version>
-        <rocketmq.version>4.6.0</rocketmq.version>
+        <micrometer.version>1.3.5</micrometer.version>
+        <rocketmq.version>4.6.1</rocketmq.version>
         <hbase.version>2.2.3</hbase.version>
         <jmockit.version>1.23</jmockit.version>
         <jmh.version>1.23</jmh.version>
@@ -49,18 +49,18 @@
         <httpclient.version>4.5.11</httpclient.version>
         <httpcore.version>4.4.13</httpcore.version>
         <httpasyncclient.version>4.1.4</httpasyncclient.version>
-        <async-http-client.version>2.10.4</async-http-client.version>
+        <async-http-client.version>2.10.5</async-http-client.version>
         <unirest-java.version>1.4.9</unirest-java.version>
-        <okhttp.version>4.3.1</okhttp.version>
+        <okhttp.version>4.4.0</okhttp.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
-        <protobuf.version>3.11.3</protobuf.version>
+        <protobuf.version>3.11.4</protobuf.version>
         <javassist.version>3.26.0-GA</javassist.version>
-        <zookeeper.version>3.5.6</zookeeper.version>
+        <zookeeper.version>3.5.7</zookeeper.version>
         <fastjson.version>1.2.62</fastjson.version>
         <jstorm-core.version>2.2.1</jstorm-core.version>
-        <redisson.version>3.12.1</redisson.version>
-        <poi.version>4.1.1</poi.version>
-        <commons-compress.version>1.19</commons-compress.version>
+        <redisson.version>3.12.2</redisson.version>
+        <poi.version>4.1.2</poi.version>
+        <commons-compress.version>1.20</commons-compress.version>
         <Memcached-Java-Client.version>3.0.2</Memcached-Java-Client.version>
         <spymemcached.version>2.12.3</spymemcached.version>
         <jmeter.version>5.2.1</jmeter.version>
@@ -100,7 +100,7 @@
         <amqp-client.version>5.8.0</amqp-client.version>
         <xstream.version>1.4.11.1</xstream.version>
         <xmlpull.version>1.1.3.4d_b4_min</xmlpull.version>
-        <tencentcloud-sdk-java.version>3.0.125</tencentcloud-sdk-java.version>
+        <tencentcloud-sdk-java.version>3.1.0</tencentcloud-sdk-java.version>
         <cglib.version>3.3.0</cglib.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <hibernate-validator.version>6.1.2.Final</hibernate-validator.version>
@@ -110,14 +110,14 @@
         <zkclient.version>0.11</zkclient.version>
         <jstl.version>1.2</jstl.version>
         <commons-fileupload.version>1.4</commons-fileupload.version>
-        <groovy.version>2.4.9</groovy.version>
+        <groovy.version>3.0.1</groovy.version>
         <commons-email.version>1.5</commons-email.version>
         <hibernate-jpa-2.1-api.version>1.0.2.Final</hibernate-jpa-2.1-api.version>
         <mockserver-netty.version>5.9.0</mockserver-netty.version>
-        <lettuce-core.version>5.2.1.RELEASE</lettuce-core.version>
+        <lettuce-core.version>5.2.2.RELEASE</lettuce-core.version>
         <ring-cors.version>0.1.12</ring-cors.version>
         <swagger-spring-boot-starter.version>1.9.1.RELEASE</swagger-spring-boot-starter.version>
-        <jsoup.version>1.12.1</jsoup.version>
+        <jsoup.version>1.12.2</jsoup.version>
         <influxdb-java.version>2.17</influxdb-java.version>
         <reactor-netty.version>0.9.4.RELEASE</reactor-netty.version>
         <colt.version>1.2.0</colt.version>
