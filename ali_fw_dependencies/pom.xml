@@ -132,6 +132,7 @@
         <guice.version>4.2.2</guice.version>
         <sharding-jdbc-spring-boot-starter.version>4.0.0</sharding-jdbc-spring-boot-starter.version>
         <curator-framework.version>4.2.0</curator-framework.version>
+        <htmlparser.version>2.1</htmlparser.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -963,9 +964,9 @@
                 <version>${curator-framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.curator</groupId>
-                <artifactId>curator-recipes</artifactId>
-                <version>${curator-framework.version}</version>
+                <groupId>org.htmlparser</groupId>
+                <artifactId>htmlparser</artifactId>
+                <version>${htmlparser.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
