@@ -11,11 +11,7 @@ import java.lang.reflect.Modifier;
 import java.net.JarURLConnection;
 import java.net.URL;
 import java.net.URLDecoder;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.regex.Pattern;
@@ -99,17 +95,16 @@ public class ClassPathScanHandler {
                 URL url = dirs.nextElement();
                 String protocol = url.getProtocol();
                 if ("file".equals(protocol)) {
-                    //System.out.println("扫描file类型的class文件....");
+                    //("扫描file类型的class文件....");
                     String filePath = URLDecoder.decode(url.getFile(), "UTF-8");
                     doScanPackageClassesByFile(classes, packageName, filePath, recursive);
                 } else if ("jar".equals(protocol)) {
-                    //System.out.println("扫描jar文件中的类....");
+                    //("扫描jar文件中的类....");
                     doScanPackageClassesByJar(packageName, url, recursive,
                             classes);
                 }
             }
         } catch (IOException e) {
-            //System.out.println("IOException error:");
             //e.printStackTrace();
         }
 
@@ -143,7 +138,6 @@ public class ClassPathScanHandler {
                 }
                 // 判断是否过滤 inner class
                 if (excludeInner && name.indexOf('$') != -1) {
-                    //System.out.println("exclude inner class with name:" + name);
                     continue;
                 }
                 String classSimpleName = name
@@ -156,13 +150,11 @@ public class ClassPathScanHandler {
                         classes.add(Thread.currentThread()
                                 .getContextClassLoader().loadClass(className));
                     } catch (Throwable e) {
-                        //System.out.println("Class.forName error:");
                         //e.printStackTrace();
                     }
                 }
             }
         } catch (IOException e) {
-            //System.out.println("IOException error:");
         }
     }
 
@@ -185,7 +177,6 @@ public class ClassPathScanHandler {
                 }
                 String filename = file.getName();
                 if (excludeInner && filename.indexOf('$') != -1) {
-                    //System.out.println("exclude inner class with name:" + filename);
                     return false;
                 }
                 return filterClassName(filename);
@@ -203,7 +194,6 @@ public class ClassPathScanHandler {
                             .loadClass(packageName + '.' + className));
 
                 } catch (ClassNotFoundException e) {
-                    System.out.println("IOException error:");
                     e.printStackTrace();
                 }
             }
@@ -242,9 +232,6 @@ public class ClassPathScanHandler {
         return Modifier.isAbstract(clazz.getModifiers());
     }
 
-    private void print(Set<Class<?>> classes) {
-        classes.forEach(clazz -> System.out.println("set.add(" + clazz.getName() + ".class);"));
-    }
 
     private static boolean filterPublic(Class clazz) {
         return Modifier.isPublic(clazz.getModifiers());
@@ -268,14 +255,14 @@ public class ClassPathScanHandler {
         Set<Class<?>> calssList = handler.getPackageAllClasses(
                 "org.apache.commons.io", true);
         for (Class<?> cla : calssList) {
-            System.out.println(cla.getName());
+            //log.info(cla.getName());
         }
-        System.out.println("开始递归扫描file文件的包：michael.hessian 下符合自定义过滤规则的类...");
+        //log.info("开始递归扫描file文件的包：michael.hessian 下符合自定义过滤规则的类...");
         classFilters.clear();
         classFilters.add("Hessian*");
         calssList = handler.getPackageAllClasses("michael.hessian", true);
         for (Class<?> cla : calssList) {
-            System.out.println(cla.getName());
+            //log.info(cla.getName());
         }
     }
 }
