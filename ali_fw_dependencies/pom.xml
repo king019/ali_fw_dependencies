@@ -13,7 +13,6 @@
     </modules>
     <properties>
         <jdk.version>11</jdk.version>
-        <encoding>UTF-8</encoding>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
         <spring-cloud-dependencies.version>Hoxton.SR2</spring-cloud-dependencies.version>
         <netty-bom.version>4.1.45.Final</netty-bom.version>
@@ -1056,7 +1055,6 @@
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
-                    <encoding>${encoding}></encoding>
                 </configuration>
             </plugin>
         </plugins>
