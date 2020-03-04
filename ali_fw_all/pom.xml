@@ -28,6 +28,7 @@
         <module>../../ali_fw_fw/fw_fw</module>
         <module>../../ali_fw_feature/fw_feature</module>
         <module>../../ali_fw_mix/fw_mix</module>
+        <module>../../ali_fw_struct/fw_struct</module>
     </modules>
     <build>
         <plugins>
