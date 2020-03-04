@@ -14,7 +14,6 @@
         <module>../../ali_fw_apache/fw_apache</module>
         <module>../../ali_fw_book/fw_book</module>
         <module>../../ali_fw_docker/fw_docker</module>
-        <module>../../ali_fw_flow/fw_flow</module>
         <module>../../ali_fw_google/fw_google</module>
         <module>../../ali_fw_java/fw_java</module>
         <module>../../ali_fw_netty/fw_netty</module>
@@ -22,7 +21,6 @@
         <module>../../ali_fw_res/fw_res</module>
 <!--        <module>../../ali_fw_source/fw_source</module>-->
         <module>../../ali_fw_sshm/fw_sshm</module>
-        <module>../../ali_fw_uml/fw_uml</module>
         <module>../../ali_fw_unit_test/fw_unit_test</module>
         <module>../../ali_fw_db/fw_db</module>
         <module>../../ali_fw_fw/fw_fw</module>
