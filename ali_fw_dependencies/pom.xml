@@ -14,7 +14,7 @@
     <properties>
         <jdk.version>11</jdk.version>
         <jdk.encoding>UTF-8</jdk.encoding>
-        <spring.boot.version>2.3.0.M1</spring.boot.version>
+        <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
         <spring-cloud-dependencies.version>Hoxton.SR3</spring-cloud-dependencies.version>
         <spring-cloud-alibaba-dependencies.version>2.2.0.RELEASE</spring-cloud-alibaba-dependencies.version>
         <netty-bom.version>4.1.46.Final</netty-bom.version>
