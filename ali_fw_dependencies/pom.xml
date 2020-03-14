@@ -135,6 +135,7 @@
         <curator-framework.version>4.3.0</curator-framework.version>
         <htmlparser.version>2.1</htmlparser.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <rxjava3.version>3.0.0</rxjava3.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -971,6 +972,11 @@
                 <groupId>org.htmlparser</groupId>
                 <artifactId>htmlparser</artifactId>
                 <version>${htmlparser.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.reactivex.rxjava3</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>${rxjava3.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
