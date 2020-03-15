@@ -1,0 +1,4 @@
+register :
+  center :
+    host: local
+    port : 8081
