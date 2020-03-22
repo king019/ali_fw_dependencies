@@ -1,4 +1,4 @@
 register :
   center :
-    host: local
-    port : 8081
+    host: regcenter
+    port : 8701

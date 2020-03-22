@@ -136,6 +136,7 @@
         <htmlparser.version>2.1</htmlparser.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <rxjava3.version>3.0.0</rxjava3.version>
+        <rxjava2.version>2.2.19</rxjava2.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -977,6 +978,11 @@
                 <groupId>io.reactivex.rxjava3</groupId>
                 <artifactId>rxjava</artifactId>
                 <version>${rxjava3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.reactivex.rxjava2</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>${rxjava2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
