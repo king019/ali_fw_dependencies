@@ -17,7 +17,7 @@
         <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
         <spring-cloud-dependencies.version>Hoxton.SR3</spring-cloud-dependencies.version>
         <spring-cloud-alibaba-dependencies.version>2.2.0.RELEASE</spring-cloud-alibaba-dependencies.version>
-        <netty-bom.version>4.1.46.Final</netty-bom.version>
+        <netty-bom.version>4.1.48.Final</netty-bom.version>
         <maven-plugin-parent.version>2.0.1</maven-plugin-parent.version>
         <grpc.version>1.27.2</grpc.version>
         <zipkin2.parent.version>2.12.9</zipkin2.parent.version>
