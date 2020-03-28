@@ -1,4 +1,4 @@
-package com.k.common;
+package com.k.dep.common.util;
 
 public class FWPathUtil {
 
@@ -15,13 +15,14 @@ public class FWPathUtil {
     }
 
     public static String getTargetPath() {
-        final String res;
+        String res;
         res = "target/";
         return res;
     }
+
     public static String getTargetPath(String path) {
-        final String res;
-        res = getTargetPath()+path;
+        String res;
+        res = getTargetPath() + path;
         return res;
     }
 
