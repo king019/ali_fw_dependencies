@@ -137,6 +137,7 @@
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <rxjava3.version>3.0.1</rxjava3.version>
         <rxjava2.version>2.2.19</rxjava2.version>
+        <commons-csv.version>1.6</commons-csv.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -979,6 +980,11 @@
                 <groupId>io.reactivex.rxjava2</groupId>
                 <artifactId>rxjava</artifactId>
                 <version>${rxjava2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-csv</artifactId>
+                <version>${commons-csv.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
