@@ -24,7 +24,7 @@
         <guava.version>29.0-jre</guava.version>
         <guava-retrying.version>2.0.0</guava-retrying.version>
         <druid.version>1.1.21</druid.version>
-        <mysql-connector-java.version>5.1.48</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
         <joda-time.version>2.10.6</joda-time.version>
         <mybatis-generator-core.version>1.4.0</mybatis-generator-core.version>
         <micrometer.version>1.5.1</micrometer.version>
