@@ -76,7 +76,7 @@
         <commons-logging.version>1.2</commons-logging.version>
         <jna.version>3.0.9</jna.version>
         <littleproxy.version>1.1.2</littleproxy.version>
-        <bcprov-jdk15on.version>1.65</bcprov-jdk15on.version>
+        <bcprov-jdk15on.version>1.67</bcprov-jdk15on.version>
         <disruptor.version>3.4.2</disruptor.version>
         <commons-net.version>3.6</commons-net.version>
         <akka-http_2.12.version>10.1.11</akka-http_2.12.version>
